@@ -1,6 +1,5 @@
 example.property = I AM THE DEFAULT
 example.super.property = THIS IS THE TEST MEESAGE 
-
 spring.jpa.hibernate.ddl-auto = none
 spring.jpa.database = POSTGRESQL
 spring.datasource.platform = postgres
@@ -10,8 +9,5 @@ spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.PostgreSQLDialec
 spring.datasource.driver-class-name = org.postgresql.Driver
 spring.datasource.testWhileIdle = true
 spring.datasource.validationQuery = SELECT 1
-
-
-
 management.endpoints.web.exposure.include = *
 management.endpoints.enabled-by-default = true
