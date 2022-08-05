@@ -1,13 +1,23 @@
-example.property = I AM THE DEFAULT
-example.super.property = THIS IS THE TEST MEESAGE 
-spring.jpa.hibernate.ddl-auto = none
-spring.jpa.database = POSTGRESQL
-spring.datasource.platform = postgres
-spring.jpa.show-sql = true
-spring.jpa.hibernate.naming-strategy = org.hibernate.cfg.ImprovedNamingStrategy
-spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.PostgreSQLDialect
-spring.datasource.driver-class-name = org.postgresql.Driver
-spring.datasource.testWhileIdle = true
-spring.datasource.validationQuery = SELECT 1
-management.endpoints.web.exposure.include = *
-management.endpoints.enabled-by-default = true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+    enabled-by-default: 'true'
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    testWhileIdle: 'true'
+    validationQuery: SELECT 1
+    platform: postgres
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    database: POSTGRESQL
+    hibernate:
+      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+      ddl-auto: none
+    show-sql: 'true'
+example:
+  property: I AM THE DEFAULT
