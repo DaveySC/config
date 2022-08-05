@@ -1,12 +1,12 @@
 example:
-  property: I AM DEV
+  property: I AM UBUN
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/ostock_dev
+    url: jdbc:postgresql://postgres:5432/ostock_dev
     username: postgres
     password: password
     driver-class-name: org.postgresql.Driver
   boot:
     admin:
       client:
-        url: http://localhost:8000
+        url: http://monitoring-service:8000
