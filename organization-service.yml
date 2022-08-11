@@ -1,20 +1,23 @@
-example:
-  property: I AM DEV
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+    enabled-by-default: 'true'
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/ostock_dev
-    username: postgres
-    password: password
     driver-class-name: org.postgresql.Driver
-  boot:
-    admin:
-      client:
-        url: http://localhost:8000
-eureka:
-  instance:
-    preferIpAddress: true
-  client:
-    registerWithEureka: true
-    fetchRegistry: true
-    serviceUrl:
-      defaultZone: http://localhost:8070/eureka/
+    testWhileIdle: 'true'
+    validationQuery: SELECT 1
+    platform: postgres
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    database: POSTGRESQL
+    hibernate:
+      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+      ddl-auto: none
+    show-sql: 'true'
+example:
+  property: I AM THE DEFAULT
