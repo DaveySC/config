@@ -1,3 +1,5 @@
+example:
+  property: I AM THE DEFAULT
 management:
   endpoints:
     web:
@@ -17,7 +19,5 @@ spring:
     database: POSTGRESQL
     hibernate:
       naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
-      ddl-auto: none
+      ddl-auto: create
     show-sql: 'true'
-example:
-  property: I AM THE DEFAULT

@@ -2,7 +2,7 @@ example:
   property: I AM DEV
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/ostock_dev
+    url: jdbc:postgresql://localhost:5432/ostock_dev_organization
     username: postgres
     password: password
     driver-class-name: org.postgresql.Driver
