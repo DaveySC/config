@@ -19,5 +19,5 @@ spring:
     database: POSTGRESQL
     hibernate:
       naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
-      ddl-auto: create
+      ddl-auto: none
     show-sql: 'true'
